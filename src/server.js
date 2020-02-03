@@ -1,11 +1,12 @@
+require('dotenvn');
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 const routes = require('../src/routes');
-const PORT = process.env || 3000;
+const PORT = process.env || 3333;
 
-mongoose.connect('mongodb+srv://willian_leman:American1995@to-do-list-jnnww.mongodb.net/to-do-list', {
+mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
@@ -16,4 +17,4 @@ app.use(express.json());
 app.use(routes);
 
 
-app.listen(3333);
+app.listen(PORT);
