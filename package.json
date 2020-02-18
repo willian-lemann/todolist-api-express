@@ -1,13 +1,12 @@
 {
-    "name": "todolist-api-express",
+    "name": "rocketlist",
     "version": "1.0.0",
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "preinstall": "npm i && docker-compose up -d",
+        "preinstall": "npm i",
         "start": "node src/server.js",
-        "dev": "nodemon src/server.js",
-        "poststop": "docker-compose stop"
+        "dev": "nodemon src/server.js", 
     },
     "dependencies": {
         "cors": "^2.8.5",

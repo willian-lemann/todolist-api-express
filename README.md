@@ -1,4 +1,4 @@
-# todolist-api-express
+# rocketlist
 
 ## Dependencias
 > Caso queria subir a aplicação com docker é necessario estar com docker com o docker instalado no seu PC.

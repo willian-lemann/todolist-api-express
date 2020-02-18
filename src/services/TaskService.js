@@ -40,5 +40,5 @@ exports.destroy = async (id) => {
     if (task == null)
         return null;
 
-    task.remove();
+        task.remove();
 };
